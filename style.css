@@ -124,10 +124,10 @@ section {
   padding: 5px;
   transition: 0.3s ease;
 }
-.card:hover{
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 4px 20px var(--h);
-    cursor: pointer;
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 4px 20px var(--h);
+  cursor: pointer;
 }
 .card h2 {
   color: var(--h);
@@ -199,35 +199,92 @@ section {
   color: rgb(240, 217, 173);
   font-family: "Inter", sans-serif;
 }
-footer{
-    background: #0e0503;
-    color: var(--h);
-    text-align: center;
-    padding: 10px 15px;
-    border-top: 1px solid var(--p);
+footer {
+  background: #0e0503;
+  color: var(--h);
+  text-align: center;
+  padding: 10px 15px;
+  border-top: 1px solid var(--p);
 }
-footer h3{
-    color: var(--h);
-    margin-bottom: 10px;
-}
-
-footer .copyright{
-    color: var(--p);
-    margin-top: 15px;
-    font-size: 12px;
+footer h3 {
+  color: var(--h);
+  margin-bottom: 10px;
 }
 
-@media (max-width: 900px){
-    .card{
-        width: 40%;
-    }
-    .home-content img{
-        width: 60%;
-    }
-    .funfacts-content{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .gallery-grid{
-        grid-template-columns: repeat(2,1fr);
-    }
+footer .copyright {
+  color: var(--p);
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 40%;
+  }
+  .home-content img {
+    width: 60%;
+  }
+  .funfacts-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 15px 0;
+  }
+  header ul {
+    width: 95%;
+  }
+  header ul li {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  header ul li a {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .home {
+    min-height: 90vh;
+    height: auto;
+    padding: 30px 15px;
+  }
+  .home-content img {
+    width: 90%;
+  }
+  .home-content p {
+    width: 95%;
+    font-size: 13px;
+  }
+  .card {
+    width: 85%;
+  }
+  .gallery {
+    padding: 30px 5%;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid img {
+    height: 230px;
+  }
+  .funfacts {
+    height: auto;
+    flex-direction: column;
+    padding: 30px 5%;
+  }
+  .funfacts-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .h-sec {
+    font-size: 26px;
+  }
+  footer {
+    padding: 20px 10px;
+  }
 }
