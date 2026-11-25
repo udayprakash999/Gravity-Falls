@@ -19,13 +19,13 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 header {
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #0c0300;
   border-bottom: 1px dashed var(--h);
 }
@@ -58,6 +58,41 @@ header ul li a {
 
 header ul li a:hover {
   color: var(--p);
+}
+.headerHome {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  position: relative;
+}
+.billcipher,
+.poster {
+  position: absolute;
+}
+.poster {
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.billcipher {
+  height: 25vh;
+  top: 30%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.billcipher img,
+.poster img {
+  height: 100%;
+  width: auto;
+}
+.text {
+  color: rgb(215, 241, 121);
+  text-align: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 1.5rem;
 }
 section {
   width: 100%;
@@ -142,6 +177,22 @@ section {
   color: rgba(134, 134, 134, 0.775);
   text-transform: capitalize;
 }
+
+.parallax {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin: 2rem 0;
+}
+.section-bg {
+  width: 100%;
+  height: 100%;
+  background: url(./assets/billposter.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
+
 .gallery {
   padding: 40px 8%;
   text-align: center;
@@ -154,6 +205,7 @@ section {
 }
 .gallery-grid {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
 }
@@ -168,13 +220,90 @@ section {
 .gallery-grid img:hover {
   transform: scale(1.04);
 }
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.about-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 10;
+}
+.about-bg img {
+  width: 100%;
+  height: 100%;
+}
+.about-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  z-index: 100;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.about-content h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  justify-content: flex-start;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+    text-shadow: 2px 2px 1px black;
+}
+.about-content h2 img {
+  display: inline-flex;
+  height: 20vh;
+}
+.about-content p {
+  width: 50%;
+  font-weight: 800;
+  text-align: justify;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 1px black;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.about-cover{
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.diper{
+    height: 45vh;
+}
+.about-cover img{
+    height: 100%;
+    width: auto;
+}
 .funfacts {
   text-align: center;
   padding: 40px 8%;
   display: flex;
-
+  position: relative;
   justify-content: space-evenly;
   align-items: center;
+}
+.twinsImage {
+  position: absolute;
+  height: 40vh;
+  left: 10%;
+}
+.funfacts h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .funfacts-content {
   display: grid;
