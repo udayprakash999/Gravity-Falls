@@ -83,71 +83,108 @@ section {
   font-family: "Montserrat", sans-serif;
   color: var(--h);
 }
+.home-content h2 span {
+  background-color: rgb(18, 17, 17);
+  padding: 0.3rem;
+  box-shadow: var(--h) 2px 2px;
+}
 .home-content p {
   width: 50%;
   font-family: "Inter", sans-serif;
   color: rgb(94, 92, 92);
   font-size: 15px;
 }
-.char{
-    padding: 1rem;
+.char {
+  padding: 1rem;
 }
-.char{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.char {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.card{
-    background-color: rgb(0, 0, 0);
-    width: 20%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 2px;
-    padding: 5px;
+.card {
+  background-color: rgb(0, 0, 0);
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px;
 }
-.card h2{
-    color: var(--h);
-    font-size: 17px;
-    padding: 0.5rem;
-    font-family: "Montserrat", sans-serif;   
+.card h2 {
+  color: var(--h);
+  font-size: 17px;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
-.card p{
-    font-size: 12px;
-    font-family: "Inter", sans-serif; 
-    font-weight: 700;
-    color: rgba(134, 134, 134, 0.775);
-    text-transform: capitalize;
+.card p {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: rgba(134, 134, 134, 0.775);
+  text-transform: capitalize;
 }
-.gallery{
-    padding: 40px 8%;
-    text-align: center;
+.gallery {
+  padding: 40px 8%;
+  text-align: center;
 }
-.gallery h2{
-    font-size: 32px;
-    color: var(--h);
-    margin-bottom: 25px;
+.gallery h2,
+.h-sec {
+  font-size: 32px;
+  color: var(--h);
+  margin-bottom: 25px;
 }
-.gallery-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 18px;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
 }
-.gallery-grid img{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: 0.3s ease;
-    cursor: pointer;
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-.gallery-grid img:hover{
-    transform:scale(1.04);
+.gallery-grid img:hover {
+  transform: scale(1.04);
+}
+.funfacts {
+  text-align: center;
+  padding: 40px 8%;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+.funfacts-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding-top: 2rem;
+}
+.facts {
+  background-color: var(--card);
+  padding: 1.2rem;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.facts:hover {
+  transform: translateY(-5px);
+}
+.facts h3 {
+  color: var(--p);
+  font-family: "Montserrat", sans-serif;
+}
+.facts p {
+  color: rgb(187, 169, 135);
+  font-family: "Inter", sans-serif;
 }
