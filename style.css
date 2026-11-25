@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 :root {
-  --bg: #0c0c0c;
+  --bg: #090000;
   --h: #f2613f;
   --p: #9b3922;
   --card: #481e14;
@@ -91,7 +91,7 @@ section {
 .home-content p {
   width: 50%;
   font-family: "Inter", sans-serif;
-  color: rgb(94, 92, 92);
+  color: rgb(152, 137, 110);
   font-size: 15px;
 }
 .char {
@@ -111,7 +111,7 @@ section {
   gap: 2rem;
 }
 .card {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(15, 13, 13);
   width: 20%;
   display: flex;
   justify-content: space-evenly;
@@ -189,4 +189,21 @@ section {
 .facts p {
   color: rgb(240, 217, 173);
   font-family: "Inter", sans-serif;
+}
+footer{
+    background: #0e0503;
+    color: var(--h);
+    text-align: center;
+    padding: 10px 15px;
+    border-top: 1px solid var(--p);
+}
+footer h3{
+    color: var(--h);
+    margin-bottom: 10px;
+}
+
+footer .copyright{
+    color: var(--p);
+    margin-top: 15px;
+    font-size: 12px;
 }
