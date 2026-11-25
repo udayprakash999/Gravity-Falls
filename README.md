@@ -8,7 +8,7 @@
 
 # Project 
 
-![project Screenshot](./project.png)
+![project Screenshot](./assets/screenshot.png)
 
 # About 
 
@@ -23,6 +23,7 @@
 - hover animations on cards and images.
 - Responsive Design.
 - Easy navigation between sections.
+- Parllax Background
 
 # Tech Stack
 
@@ -32,6 +33,7 @@
 - CSS GRID
 - CSS MEDIA QUERIES
 - GOOGLE FONTS 
+- GSAP Animation
 
 # What I Learned 
 
@@ -40,6 +42,8 @@
 - working with flexbox and css grid
 - adding hover effects and animations.
 - making website responsive using media queries.
+- Parallax animation
+- GSAP animations
 
 # Author
 

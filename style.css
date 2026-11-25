@@ -257,7 +257,7 @@ section {
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-    text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 1px black;
 }
 .about-content h2 img {
   display: inline-flex;
@@ -273,21 +273,21 @@ section {
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.about-cover{
-    position: absolute;
-    z-index: 200;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+.about-cover {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-.diper{
-    height: 45vh;
+.diper {
+  height: 45vh;
 }
-.about-cover img{
-    height: 100%;
-    width: auto;
+.about-cover img {
+  height: 100%;
+  width: auto;
 }
 .funfacts {
   text-align: center;
@@ -296,6 +296,8 @@ section {
   position: relative;
   justify-content: space-evenly;
   align-items: center;
+  background: url(./assets/funfacts.jpg);
+  background-size: 100% 100%;
 }
 .twinsImage {
   position: absolute;
@@ -303,6 +305,9 @@ section {
   left: 10%;
 }
 .funfacts h2 {
+  color: palevioletred;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2.5rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .funfacts-content {
@@ -327,6 +332,51 @@ section {
 .facts p {
   color: rgb(240, 217, 173);
   font-family: "Inter", sans-serif;
+}
+.knowmore {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: aliceblue;
+}
+.knowmore .know-text {
+  width: 40%;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+}
+.know-text h3 {
+  color: yellow;
+  font-size: 2.25rem;
+}
+.know-text button {
+  width: max-content;
+  padding: 0.5rem 1.5rem;
+  color: yellow;
+  font-size: 2rem;
+  border-radius: 1rem;
+  background: black;
+  border: 1px solid yellow;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.knowmore .know-image {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.knowmore .know-image img {
+  height: 40vh;
 }
 footer {
   background: #0e0503;
@@ -361,6 +411,9 @@ footer .copyright {
   }
 }
 @media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
   header {
     height: auto;
     padding: 15px 0;
