@@ -119,6 +119,11 @@ section {
   text-align: center;
   border-radius: 2px;
   padding: 5px;
+  transition: 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 4px 20px var(--h);
 }
 .card h2 {
   color: var(--h);
