@@ -89,3 +89,38 @@ section {
   color: rgb(94, 92, 92);
   font-size: 15px;
 }
+.char{
+    padding: 1rem;
+}
+.char{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.card{
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px;
+}
+.card h2{
+    color: var(--h);
+    font-size: 17px;
+    padding: 0.5rem;
+    font-family: "Montserrat", sans-serif;   
+}
+.card p{
+    font-size: 14px;
+    font-family: "Inter", sans-serif; 
+    color: rgba(245, 245, 245, 0.775);
+}
